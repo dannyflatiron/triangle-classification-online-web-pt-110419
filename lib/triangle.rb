@@ -13,6 +13,9 @@ attr_accessor :side_1, :side_2, :side_3
       # should raise a custom error
       # how do I raise a customer error?
       # what makes a triangle equal on all sides?
+      if @side_1 == 0 && @side_2 == 0 && @side_3 == 0
+        raise TriangleError
+        
       if @side_3 == @side_2 && @side_3 == @side_1
         :equilateral
       elsif
@@ -25,7 +28,7 @@ attr_accessor :side_1, :side_2, :side_3
       elsif
         @side_1 == 0 && @side_2 == 0 && @side_3 == 0
         # how do I raise an error?
-        
+
         raise TriangleError
 
       end
