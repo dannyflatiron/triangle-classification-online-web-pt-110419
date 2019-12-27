@@ -32,6 +32,7 @@ attr_accessor :side_1, :side_2, :side_3
         raise TriangleError
       elsif
         @side_1 + @side_2 <= @side_3 || @side_3 + @side_2 <= @side_1 || @side_3 + @side_1 <= @side_1
+        raise TriangleError
       elsif
         @side_3 == @side_2 && @side_3 == @side_1
         :equilateral
