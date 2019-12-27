@@ -20,7 +20,8 @@ attr_accessor :side_1, :side_2, :side_3
       #  binding.pry
         :isosceles
       elsif
-        @side_1 != @side_2 && @side_1 != @side_3 && @side_2 != @side_1 && @side_2 != @side_3 && @side_3 != @side_2 && @side_2 != @side_2 
+        @side_1 != @side_2 && @side_1 != @side_3 && @side_2 != @side_1 && @side_2 != @side_3 && @side_3 != @side_2 && @side_2 != @side_2
+        :scalene 
       end
 
     end
